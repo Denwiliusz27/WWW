@@ -6,6 +6,21 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+.idea
+__MACOSX/
+cw_7/
+cw_8/
+cw_9/
+cw_10/
+cw_12/
+Techniki-WWW/
+untilted/
+untilted11/
+untilted13/
+WWW/
+WYKŁADY/
+
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
