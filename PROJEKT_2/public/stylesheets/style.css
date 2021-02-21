@@ -23,7 +23,6 @@ body {
 }
 
 .main_site {
-  padding: 0;
   margin: 0;
 }
 
@@ -33,7 +32,7 @@ body {
   background-color: #1a4a93;
   border-right: 7px solid #182f76;
   float: left;
-  position: fixed;
+  position: absolute;
 }
 
 .menu {
@@ -87,6 +86,21 @@ body {
   color: #051453;
   letter-spacing: 5px;
   font-size: 43px;
+}
+
+.main_article {
+  position: center;
+  width: 70%;
+  height: auto;
+  padding: 0 20px 20px 20px;
+  margin: 3px 3px 2px 20%;
+}
+
+h2 {
+  text-align: center;
+  width: 90%;
+  position: center;
+  border-bottom: 3px solid black;
 }
 
 
