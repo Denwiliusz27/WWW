@@ -39,6 +39,7 @@ body {
 .menu {
   list-style: none;
   font-size: 40px;
+  text-shadow: black 3px 0 3px;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -53,10 +54,11 @@ body {
   border: 7px solid #db2915;
   margin: 5% 10px 10px 10px;
   border-radius: 15px 15px 15px 15px;
+  background-color: rgba(255,255,255,0.2);
+  background-blend-mode: lighten;
 }
 
 .menu #main {
-  
    background-image: url("https://dyskusja.biz/wp-content/uploads/2016/04/gielda-obrys-czlowieka-monitory-istock-1.jpg");
    background-size: cover;
 }
@@ -67,7 +69,7 @@ body {
 }
 
 .menu #dodaj_rachunek {
-  background-image: url("https://ocdn.eu/pulscms-transforms/1/cW-k9kuTURBXy81OWVmNWRlMy02ODJmLTQxMGQtYmRmMy0zOGVjMTE0MjdjYjMuanBlZ5GVAs0BigDDw4GhMAE ");
+  background-image: url("https://ocdn.eu/pulscms-transforms/1/cW-k9kuTURBXy81OWVmNWRlMy02ODJmLTQxMGQtYmRmMy0zOGVjMTE0MjdjYjMuanBlZ5GVAs0BigDDw4GhMAE");
   background-size: cover;
 }
 
@@ -75,16 +77,16 @@ body {
   display: block;
   font-weight: bold;
   padding: 0;
-  color: yellow;
+  color: #ff0011;
   text-decoration: none;
 }
 
 .menu li:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.5);
   background-blend-mode: lighten;
   color: #051453;
   letter-spacing: 5px;
-  font-size: 45px;
+  font-size: 43px;
 }
 
 
