@@ -22,9 +22,7 @@ body {
   font-size: 50px;
 }
 
-.main_site {
-  margin: 0;
-}
+
 
 .left_bar {
   width: 20%;
@@ -32,7 +30,7 @@ body {
   background-color: #1a4a93;
   border-right: 7px solid #182f76;
   float: left;
-  position: absolute;
+  position: fixed;
 }
 
 .menu {
@@ -89,11 +87,10 @@ body {
 }
 
 .main_article {
-  position: center;
   width: 70%;
   height: auto;
   padding: 0 20px 20px 20px;
-  margin: 3px 3px 2px 20%;
+  margin: 0 3px 2px 20%;
 }
 
 h2 {
