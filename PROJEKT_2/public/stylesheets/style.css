@@ -1,5 +1,5 @@
 body {
-  background-color: darkgrey;
+  background-color: #366879;
   padding: 0;
   margin: 0;
 }
@@ -7,7 +7,7 @@ body {
 .header {
   background-image: url('https://lh3.googleusercontent.com/proxy/FMUpHED97V3tCkNQGFY6FgSZjA9VFnk0KpLUdQDF4J3QXh9qljrZgBHw9XN14fSzHIrwQNTQcSWa2W9OEZBlmGsjAGVCAvwtTpX64kKcHhCj2D8');
   height: 120px;
-  border-bottom: 5px solid #161b91;
+  border-bottom: 7px solid #161b91;
 }
 
 .header h1 {
@@ -31,7 +31,7 @@ body {
   width: 20%;
   height: 100%;
   background-color: #1a4a93;
-  border-right: 5px solid #182f76;
+  border-right: 7px solid #182f76;
   float: left;
   position: fixed;
 }
@@ -56,40 +56,35 @@ body {
 }
 
 .menu #main {
+  
    background-image: url("https://dyskusja.biz/wp-content/uploads/2016/04/gielda-obrys-czlowieka-monitory-istock-1.jpg");
    background-size: cover;
-   background-color: rgba(255,255,255,0.3);
-   background-blend-mode: lighten;
 }
 
 .menu #faktury {
   background-image: url("https://www.polskapraca.info/wp-content/uploads/2020/08/pexels-photo-210607_800x533-800x445.jpeg");
   background-size: cover;
-  background-color: rgba(255,255,255,0.3);
-  background-blend-mode: lighten;
 }
 
 .menu #dodaj_rachunek {
   background-image: url("https://ocdn.eu/pulscms-transforms/1/cW-k9kuTURBXy81OWVmNWRlMy02ODJmLTQxMGQtYmRmMy0zOGVjMTE0MjdjYjMuanBlZ5GVAs0BigDDw4GhMAE ");
   background-size: cover;
-  background-color: rgba(255,255,255,0.3);
-  background-blend-mode: lighten;
 }
 
 .menu a {
   display: block;
-  font-size: 20px;
   font-weight: bold;
   padding: 0;
-  color: white;
+  color: yellow;
   text-decoration: none;
-  border-radius: 10px 10px 10px 10px;
 }
 
-.menu a:hover {
-  background-color: coral;
+.menu li:hover {
+  background-color: rgba(255,255,255,0.3);
+  background-blend-mode: lighten;
   color: #051453;
   letter-spacing: 5px;
+  font-size: 45px;
 }
 
 
