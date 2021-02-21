@@ -5,38 +5,88 @@ body {
 }
 
 .header {
-  height: 100px;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  background-color: #005700;
-  border-bottom: 5px solid #004000;
+  background-image: url('https://lh3.googleusercontent.com/proxy/FMUpHED97V3tCkNQGFY6FgSZjA9VFnk0KpLUdQDF4J3QXh9qljrZgBHw9XN14fSzHIrwQNTQcSWa2W9OEZBlmGsjAGVCAvwtTpX64kKcHhCj2D8');
+  height: 120px;
+  border-bottom: 5px solid #161b91;
 }
 
 .header h1 {
+  margin: 0 0 0 0;
+  padding: 25px 0 0 0 ;
   text-align: center;
-  text-shadow: black 3px 2px 2px;
+  text-shadow: black 5px 2px 2px;
   font-family: Cambria,serif;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 10px;
-  color: #e21111;
+  color: #db2915;
   font-size: 50px;
 }
 
-
 .main_site {
-
+  padding: 0;
+  margin: 0;
 }
-
 
 .left_bar {
   width: 20%;
   height: 100%;
-  background-color: forestgreen;
-  border-right: 5px solid #195819;
+  background-color: #1a4a93;
+  border-right: 5px solid #182f76;
   float: left;
   position: fixed;
-  margin: 0 0 0 0;
-  left: 0;
+}
+
+.menu {
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
+  height: 100%;
+}
+
+.menu li {
+  height: 20%;
+  background-color: #4185be;
+  border: 7px solid #db2915;
+  margin: 5% 10px 10px 10px;
+  padding: 20% 0 20% 0;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.menu #main {
+   background-image: url("https://dyskusja.biz/wp-content/uploads/2016/04/gielda-obrys-czlowieka-monitory-istock-1.jpg");
+   background-size: cover;
+   background-color: rgba(255,255,255,0.3);
+   background-blend-mode: lighten;
+}
+
+.menu #faktury {
+  background-image: url("https://www.polskapraca.info/wp-content/uploads/2020/08/pexels-photo-210607_800x533-800x445.jpeg");
+  background-size: cover;
+  background-color: rgba(255,255,255,0.3);
+  background-blend-mode: lighten;
+}
+
+.menu #dodaj_rachunek {
+  background-image: url("https://ocdn.eu/pulscms-transforms/1/cW-k9kuTURBXy81OWVmNWRlMy02ODJmLTQxMGQtYmRmMy0zOGVjMTE0MjdjYjMuanBlZ5GVAs0BigDDw4GhMAE ");
+  background-size: cover;
+  background-color: rgba(255,255,255,0.3);
+  background-blend-mode: lighten;
+}
+
+.menu a {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.menu a:hover {
+  background-color: coral;
+  color: #051453;
+  letter-spacing: 5px;
 }
 
 
