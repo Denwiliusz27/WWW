@@ -37,18 +37,21 @@ body {
 }
 
 .menu {
+  list-style: none;
   font-size: 40px;
   text-align: center;
   padding: 0;
+  margin: 0;
   height: 100%;
 }
 
 .menu li {
-  height: 20%;
-  background-color: #4185be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22%;
   border: 7px solid #db2915;
   margin: 5% 10px 10px 10px;
-  padding: 20% 0 20% 0;
   border-radius: 15px 15px 15px 15px;
 }
 
