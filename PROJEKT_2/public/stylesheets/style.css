@@ -1,7 +1,47 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: darkgrey;
+  padding: 0;
+  margin: 0;
 }
+
+.header {
+  height: 100px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: #005700;
+  border-bottom: 5px solid #004000;
+}
+
+.header h1 {
+  text-align: center;
+  text-shadow: black 3px 2px 2px;
+  font-family: Cambria,serif;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #e21111;
+  font-size: 50px;
+}
+
+
+.main_site {
+
+}
+
+
+.left_bar {
+  width: 20%;
+  height: 100%;
+  background-color: forestgreen;
+  border-right: 5px solid #195819;
+  float: left;
+  position: fixed;
+  margin: 0 0 0 0;
+  left: 0;
+}
+
+
+
+
 
 a {
   color: #00B7FF;

@@ -1,0 +1,226 @@
+
+body {
+    background-color: #083b5d;
+    margin: 0;
+    padding: 0;
+}
+
+.website #main_site {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.website #header {
+    background-image: url("mountains.jpg");
+    background-size: 100% 250%;
+    padding: 0 0 0 0;
+    margin: 3px 3px 3px 3px;
+    height: 100px;
+    border: 5px solid #051453;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.website #header h1 {
+    padding: 10px 10px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: black 3px 2px 2px;
+    font-family: Cambria,serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #e21111;
+    font-size: 50px;
+    height: auto;
+}
+
+.website #main_part {
+    padding: 0 0 0 0;
+    margin: 0 0 3px;
+}
+
+.website #main_part #left_sidebar {
+    background-color: #001452;
+    float: left;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    border: 5px solid crimson;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.left_image {
+    float: left;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin: 163px 3px 3px 3px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.left_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.menu {
+    list-style: none;
+    font-size: larger;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li {
+    background-color: crimson;
+    border: 3px solid white;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.menu a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.menu a:hover {
+    background-color: coral;
+    color: #051453;
+    letter-spacing: 5px;
+}
+
+.website #main_part #main_article {
+    color: #050000;
+    border: 5px solid #051453;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #90aed2;
+    margin: 3px 3px 3px 268px;
+    padding: 0 20px 20px 20px;
+    height: auto;
+    font-size: larger;
+}
+
+.website #main_part #main_article h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 20px 0 ;
+    border-bottom: 2px solid #051453;
+}
+
+#main_article figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+img {
+    height: 80%;
+    width: 80%;
+    border: 5px solid crimson;
+    border-radius: 20px 20px 20px 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.website #footer {
+    background-color: #d2d3dc;
+    border-radius: 15px 15px 15px 15px;
+    border: 5px solid #051453;
+    padding: 0;
+    margin: 3px;
+}
+
+.website #footer p {
+    padding: 0 0 0 20px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#main_article .pictures figcaption {
+    width: 80%;
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+#main_article #center{
+    width: 70%;
+    position: center;
+}
+
+#main_article .two_pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main_article #left {
+    width: 50%;
+}
+
+#main_article #right {
+    width: 50%;
+}
+
+#main_article .contact {
+    display: flex;
+    justify-content: space-between;
+
+    word-wrap: break-word;
+    text-align: center;
+    padding: 5px 3px 5px 3px;
+    width: 100%;
+}
+
+#main_article .contact #phone {
+
+    width: 25%;
+    background-color: #d5d6de;
+    border: 5px solid crimson;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#main_article .contact #mail {
+
+    width: 30%;
+    padding: 0 3% 0 3%;
+    background-color: #d5d6de;
+    border: 5px solid crimson;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#main_article .contact #adress {
+
+    width: 25%;
+    background-color: #d5d6de;
+    border: 5px solid crimson;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#main_article .contact h2 {
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    position: center;
+    border-bottom: 3px solid black;
+}
+
+#main_article .contact a {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#main_article .contact p {
+    font-size: 30px;
+}
