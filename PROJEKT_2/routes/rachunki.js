@@ -15,7 +15,7 @@ var db = mysql.createConnection({
 db.connect();
 
 
-/* localhost:3000/wydatki */
+/* localhost:3000/rachunki */
 /* do wyświetlenia całej tabeli, bez żadnego filtrowania */
 router.get('/', function(req, res, next) {
   var sql = 'SELECT * From faktury';
@@ -27,10 +27,33 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* localhost:3000/dodaj */
-/* słuzy do dodawania rachunków do tabeli */
-router.get('/dodaj', function(req, res, next) {
+router.get('/send_data', function(req, res, next) {
   res.render('dodaj_rachunek', {title: 'Rachunki'});
+});
+
+
+/* localhost:3000/rachunki/dodaj */
+/* słuzy do dodawania rachunków do tabeli */
+router.post('/dodaj', function(req, res, next) {
+  var opis = req.body.opis;
+  var kwota = req.dob.kwota;
+  var imie = req.body.imie;
+  var nazwisko = req.body.nazwisko;
+  var miesiac = req.body.miesiac;
+
+  const sql = 'insert into faktury (faktury.opis, faktury.kwota, faktury.imie, faktury.nazwisko, faktury.miesiac) Values ?';
+
+  var values = [
+      [opis, kwota, imie, nazwisko, miesiac]
+  ];
+
+  db.query(sql, [values], function (err, result) {
+    if (err) throw err;
+    else {
+      res.render('dodaj_rachunek', { info: 'Dane zostaly poprawnie zapisane'} );
+    }
+
+  });
 });
 
 
