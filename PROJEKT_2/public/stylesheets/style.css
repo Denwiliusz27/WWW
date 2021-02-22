@@ -1,5 +1,5 @@
 body {
-  background-color: #366879;
+  background-color: #aea7af;
   padding: 0;
   margin: 0;
 }
@@ -21,8 +21,6 @@ body {
   color: #db2915;
   font-size: 50px;
 }
-
-
 
 .left_bar {
   width: 20%;
@@ -87,23 +85,34 @@ body {
 }
 
 .main_article {
-  width: 70%;
+  font-size: larger;
   height: auto;
   padding: 0 20px 20px 20px;
-  margin: 0 3px 2px 20%;
+  margin: 0 0 0 20.5%;
 }
 
 h2 {
   text-align: center;
-  width: 90%;
-  position: center;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #c6000d;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 0 20px 0 ;
 }
 
+.footer {
+  background-color: #101492;
+  border-top: 5px solid #161b91;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
-
-
-
-a {
-  color: #00B7FF;
+.footer p {
+  margin: 0 0 0 0;
+  text-align: center;
+  padding: 10px 0 10px 0 ;
+  font-size: 12px;
+  font-style: italic;
+  color: white;
 }
