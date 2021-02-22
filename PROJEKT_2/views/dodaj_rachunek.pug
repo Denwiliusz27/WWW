@@ -18,23 +18,23 @@ block content
       h2 Dodaj rachunek
 
       form(action='/rachunki/dodaj', method='POST')
-        p Opis rachunku:
+        p.form_option Opis rachunku:
         p
           input(name= 'opis', value='', type='varchar(300)')
-        p Kwota:
+        p.form_option Kwota:
         p
           input(name= 'kwota', value='', type='double')
-        p Imie:
+        p.form_option Imie:
         p
           input(name= 'imie', value='', type='text')
-        p Nazwisko:
+        p.form_option Nazwisko:
         p
           input(name= 'nazwisko', value='', type='text')
-        p Miesiąc:
+        p.form_option Miesiąc:
         p
           input(name= 'miesiac', value='', type='text')
 
-        p
+        p.submit
           input(value="Dodaj", type='submit')
 
       p= info
