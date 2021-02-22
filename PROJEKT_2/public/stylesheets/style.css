@@ -38,6 +38,9 @@ body {
   background-color: #1a4a93;
   border-right: 7px solid #182f76;
   float: left;
+  position: absolute;
+  top: 127px;
+  bottom: 0;
 }
 
 .menu {
@@ -48,13 +51,14 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
+
 }
 
 .menu li {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 22%;
+  height: 170px;
   border: 7px solid #db2915;
   margin: 5% 10px 10px 10px;
   border-radius: 15px 15px 15px 15px;
@@ -96,7 +100,7 @@ body {
 .main_article {
   font-size: larger;
   height: auto;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 70px 20px;
   margin: 0 0 0 20.5%;
 }
 
