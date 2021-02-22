@@ -1,28 +1,29 @@
 extends layout
 
 block content
-  header.header
-    h1 Budżet domowników
+  div.main_part
+    header.header
+      h1 Budżet domowników
 
-  nav.left_bar
-    ul.menu
-      li#main
-        a(href='http://localhost:3000/') Strona główna
-      li#faktury
-        a(href='http://localhost:3000/rachunki') Rachunki
-      li#dodaj_rachunek
-        a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
+    nav.left_bar
+      ul.menu
+        li#main
+          a(href='http://localhost:3000/') Strona główna
+        li#faktury
+          a(href='http://localhost:3000/rachunki') Rachunki
+        li#dodaj_rachunek
+          a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
 
-  div.main_article
-    h2 Strona główna
-    p
-      | Witamy w naszej aplikacji. Jest to strona poświęcona kontroli budżetu domowników.
-      | Dzięki niej możliwy jest dostęp do wszystkich operacji, które zostały wykonane przez każdą osobę.
-    p
-      | W zakładce "Rachunki" znajdują się wykonane przez domowników operacje. Każda z nich posiada kwotę, opis
-      | transakcji, oraz imię i nazwisko osoby, która dokonała płatności.
-    p
-      | W zakładce "Dodaj rachunek" istnieje możliwość dodanie nowego rachunku.
+    div.main_article
+      h2 Strona główna
+      p
+        | Witamy w naszej aplikacji. Jest to strona poświęcona kontroli budżetu domowników.
+        | Dzięki niej możliwy jest dostęp do wszystkich operacji, które zostały wykonane przez każdą osobę.
+      p
+        | W zakładce "Rachunki" znajdują się wykonane przez domowników operacje. Każda z nich posiada kwotę, opis
+        | transakcji, oraz imię i nazwisko osoby, która dokonała płatności.
+      p
+        | W zakładce "Dodaj rachunek" istnieje możliwość dodanie nowego rachunku.
 
-  footer.footer
+  footer
     p &copy;2020	Daniel Wielgosz

@@ -1,35 +1,36 @@
 extends layout
 
 block content
-  header.header
-    h1 Budżet domowników
+  div.main_part
+    header.header
+      h1 Budżet domowników
 
-  nav.left_bar
-    ul.menu
-      li#main
-        a(href='http://localhost:3000/') Strona główna
-      li#faktury
-        a(href='http://localhost:3000/rachunki') Rachunki
-      li#dodaj_rachunek
-        a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
+    nav.left_bar
+      ul.menu
+        li#main
+          a(href='http://localhost:3000/') Strona główna
+        li#faktury
+          a(href='http://localhost:3000/rachunki') Rachunki
+        li#dodaj_rachunek
+          a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
 
-  div.main_article
-    h2 Rachunki
+    div.main_article
+      h2 Rachunki
 
-    table.rachunki
-      tr
-        th.opis Opis
-        th Kwota
-        th Imie
-        th Nazwisko
-        th Miesiąc
-      each item in dane
+      table.rachunki
         tr
-          td.opis #{item.opis}
-          td.inne #{item.kwota}
-          td.torzsamosc #{item.imie}
-          td.torzsamosc #{item.nazwisko}
-          td.inne #{item.miesiac}
+          th.opis Opis
+          th Kwota
+          th Imie
+          th Nazwisko
+          th Miesiąc
+        each item in dane
+          tr
+            td.opis #{item.opis}
+            td.inne #{item.kwota}
+            td.torzsamosc #{item.imie}
+            td.torzsamosc #{item.nazwisko}
+            td.inne #{item.miesiac}
 
-  footer.footer
+  footer
     p &copy;2020	Daniel Wielgosz

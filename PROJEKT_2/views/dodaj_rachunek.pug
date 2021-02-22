@@ -1,42 +1,43 @@
 extends layout
 
 block content
-  header.header
-    h1 Budżet domowników
+  div.main_part
+    header.header
+      h1 Budżet domowników
 
-  nav.left_bar
-    ul.menu
-      li#main
-        a(href='http://localhost:3000/') Strona główna
-      li#faktury
-        a(href='http://localhost:3000/rachunki') Rachunki
-      li#dodaj_rachunek
-        a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
+    nav.left_bar
+      ul.menu
+        li#main
+          a(href='http://localhost:3000/') Strona główna
+        li#faktury
+          a(href='http://localhost:3000/rachunki') Rachunki
+        li#dodaj_rachunek
+          a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
 
-  div.main_article
-    h2 Dodaj rachunek
+    div.main_article
+      h2 Dodaj rachunek
 
-    form(action='/rachunki/dodaj', method='POST')
-      p Opis rachunku:
-      p
-        input(name= 'opis', value='', type='varchar(300)')
-      p Kwota:
-      p
-        input(name= 'kwota', value='', type='double')
-      p Imie:
-      p
-        input(name= 'imie', value='', type='text')
-      p Nazwisko:
-      p
-        input(name= 'nazwisko', value='', type='text')
-      p Miesiąc:
-      p
-        input(name= 'miesiac', value='', type='text')
+      form(action='/rachunki/dodaj', method='POST')
+        p Opis rachunku:
+        p
+          input(name= 'opis', value='', type='varchar(300)')
+        p Kwota:
+        p
+          input(name= 'kwota', value='', type='double')
+        p Imie:
+        p
+          input(name= 'imie', value='', type='text')
+        p Nazwisko:
+        p
+          input(name= 'nazwisko', value='', type='text')
+        p Miesiąc:
+        p
+          input(name= 'miesiac', value='', type='text')
 
-      p
-        input(value="Dodaj", type='submit')
+        p
+          input(value="Dodaj", type='submit')
 
-    p= info
+      p= info
 
-  footer.footer
+  footer
     p &copy;2020	Daniel Wielgosz

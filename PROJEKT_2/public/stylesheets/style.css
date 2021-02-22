@@ -2,12 +2,22 @@ body {
   background-color: #aea7af;
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+.main_part {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
 }
 
 .header {
   background-image: url('http://www.dolarowo.pl/images/arts/mid_cover/4730_cover.jpg');
   height: 120px;
   border-bottom: 7px solid #161b91;
+  position: relative;
+
 }
 
 .header h1 {
@@ -98,15 +108,16 @@ h2 {
   padding: 0 0 20px 0 ;
 }
 
-.footer {
+footer {
   background-color: #161b91;
   border-top: 5px solid #3e4cbd;
   padding: 0;
-  bottom: 0;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-.footer p {
+footer p {
   margin: 0 0 0 0;
   text-align: center;
   padding: 10px 0 10px 0 ;
@@ -156,6 +167,10 @@ h2 {
 
 form{
   margin: 0 30% 0 30%;
+}
+
+form p {
+
 }
 
 form input {
