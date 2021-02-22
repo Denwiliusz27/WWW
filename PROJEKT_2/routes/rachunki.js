@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
 
   /* wywołuje dowolne zapytanie sql */
   db.query(sql, function(error, dane){  // dane - przechowuje odpowiedź z zapytania do bazy danych
-    res.render('wydatki', {title: 'Wydatki', dane: dane});
+    res.render('rachunki', {title: 'Wydatki', dane: dane});
     // res.json(dane);
   });
 });
