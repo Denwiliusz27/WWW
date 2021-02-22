@@ -27,10 +27,10 @@ router.get('/', function(req, res, next) {
   });
 });
 
-
-
+/* localhost:3000/dodaj */
+/* słuzy do dodawania rachunków do tabeli */
 router.get('/dodaj', function(req, res, next) {
-    res.send('Tu cos jeszcze powstanie')
+  res.render('dodaj_rachunek', {title: 'Rachunki'});
 });
 
 
