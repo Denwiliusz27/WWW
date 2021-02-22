@@ -36,10 +36,11 @@ router.get('/send_data', function(req, res, next) {
 /* słuzy do dodawania rachunków do tabeli */
 router.post('/dodaj', function(req, res, next) {
   var opis = req.body.opis;
-  var kwota = req.dob.kwota;
+  var kwota = req.body.kwota;
   var imie = req.body.imie;
   var nazwisko = req.body.nazwisko;
   var miesiac = req.body.miesiac;
+  console.log(opis + kwota + imie + nazwisko + miesiac);
 
   const sql = 'insert into faktury (faktury.opis, faktury.kwota, faktury.imie, faktury.nazwisko, faktury.miesiac) Values ?';
 

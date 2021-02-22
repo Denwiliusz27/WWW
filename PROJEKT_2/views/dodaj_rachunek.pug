@@ -16,8 +16,22 @@ block content
   div.main_article
     h2 Dodaj rachunek
 
+    form(action='/rachunki/dodaj', method='POST')
+      p Opis rachunku:
+        input(name= 'opis', value='', type='text')
+      p Kwota:
+        input(name= 'kwota', value='', type='double')
+      p Imie:
+        input(name= 'imie', value='', type='text')
+      p Nazwisko:
+        input(name= 'nazwisko', value='', type='text')
+      p Miesiąc:
+        input(name= 'miesiac', value='', type='text')
 
-  p= info
+      p
+        input(value="Dodaj", type='submit')
+
+    p= info
 
   footer.footer
     p &copy;2020	Daniel Wielgosz
