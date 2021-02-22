@@ -100,7 +100,7 @@ h2 {
 }
 
 .footer {
-  background-color: #101492;
+  background-color: #01766c;
   border-top: 7px solid #161b91;
   padding: 0;
   position: absolute;
@@ -115,4 +115,31 @@ h2 {
   font-size: 12px;
   font-style: italic;
   color: white;
+}
+
+.table {
+  text-align: center;
+  width: 100%;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+.table tr {
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table th {
+  background-color: #db2915;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+.table td {
+  border: 3px solid black;
+  border-collapse: collapse;
 }

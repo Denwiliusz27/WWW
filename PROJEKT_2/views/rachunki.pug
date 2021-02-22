@@ -1,9 +1,37 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  div
-    ul
+  header.header
+    h1 Budżet domowników
+
+  nav.left_bar
+    ul.menu
+      li#main
+        a(href='http://localhost:3000/') Strona główna
+      li#faktury
+        a(href='http://localhost:3000/rachunki') Rachunki
+      li#dodaj_rachunek
+        a(href='http://localhost:3000/rachunki/dodaj') Dodaj rachunek
+
+  div.main_article
+    h2 Rachunki
+
+    table.table
+      tr
+        th ID
+        th Opis
+        th Kwota
+        th Imie
+        th Nazwisko
+        th Miesiąc
       each item in dane
-        li #{item.id} #{item.opis} #{item.kwota} #{item.imie}
+        tr
+          td #{item.faktura_id}
+          td #{item.opis}
+          td #{item.kwota}
+          td #{item.imie}
+          td #{item.nazwisko}
+          td #{item.miesiac}
+
+  footer.footer
+    p &copy;2020	Daniel Wielgosz
