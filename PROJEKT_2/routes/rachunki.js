@@ -49,7 +49,10 @@ router.post('/dodaj', function(req, res, next) {
   ];
 
   db.query(sql, [values], function (err, result) {
-    if (err) throw err;
+    if (err) {
+      res.render('dodaj_rachunek', { info: 'Niepoprawne dane'});
+      throw err;
+    }
     else {
       res.render('dodaj_rachunek', { info: 'Dane zostaly poprawnie zapisane'} );
     }

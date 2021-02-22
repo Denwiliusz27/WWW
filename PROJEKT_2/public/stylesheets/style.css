@@ -28,7 +28,6 @@ body {
   background-color: #1a4a93;
   border-right: 7px solid #182f76;
   float: left;
-  position: fixed;
 }
 
 .menu {
@@ -100,10 +99,9 @@ h2 {
 }
 
 .footer {
-  background-color: #01766c;
-  border-top: 7px solid #161b91;
+  background-color: #161b91;
+  border-top: 5px solid #3e4cbd;
   padding: 0;
-  position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -117,29 +115,54 @@ h2 {
   color: white;
 }
 
-.table {
+.rachunki {
   text-align: center;
   width: 100%;
   border: 3px solid black;
   border-collapse: collapse;
 }
 
-.table tr {
+.rachunki tr {
   border: 3px solid black;
   border-collapse: collapse;
 }
 
-.table tr:nth-child(even) {
+.rachunki tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.table th {
+.rachunki th {
   background-color: #db2915;
   border: 3px solid black;
   border-collapse: collapse;
 }
 
-.table td {
+.rachunki .opis {
+  width: 40%;
+}
+
+.rachunki .inne {
+  width: 10%;
+}
+
+.rachunki .torzsamosc {
+  width: 20%;
+}
+
+.rachunki td {
   border: 3px solid black;
   border-collapse: collapse;
+}
+
+form{
+  margin: 0 30% 0 30%;
+}
+
+form input {
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+}
+
+form input[type=submit] {
+  width: 20%;
 }

@@ -18,14 +18,19 @@ block content
 
     form(action='/rachunki/dodaj', method='POST')
       p Opis rachunku:
-        input(name= 'opis', value='', type='text')
+      p
+        input(name= 'opis', value='', type='varchar(300)')
       p Kwota:
+      p
         input(name= 'kwota', value='', type='double')
       p Imie:
+      p
         input(name= 'imie', value='', type='text')
       p Nazwisko:
+      p
         input(name= 'nazwisko', value='', type='text')
       p Miesiąc:
+      p
         input(name= 'miesiac', value='', type='text')
 
       p

@@ -16,22 +16,20 @@ block content
   div.main_article
     h2 Rachunki
 
-    table.table
+    table.rachunki
       tr
-        th ID
-        th Opis
+        th.opis Opis
         th Kwota
         th Imie
         th Nazwisko
         th Miesiąc
       each item in dane
         tr
-          td #{item.faktura_id}
-          td #{item.opis}
-          td #{item.kwota}
-          td #{item.imie}
-          td #{item.nazwisko}
-          td #{item.miesiac}
+          td.opis #{item.opis}
+          td.inne #{item.kwota}
+          td.torzsamosc #{item.imie}
+          td.torzsamosc #{item.nazwisko}
+          td.inne #{item.miesiac}
 
   footer.footer
     p &copy;2020	Daniel Wielgosz
