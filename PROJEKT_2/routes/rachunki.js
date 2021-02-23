@@ -27,9 +27,10 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* localhost:3000/rachunki/grupowanie po miesiacach */
+
+/* localhost:3000/rachunki/gb_miesiace */
 /* do wyświetlenia całej tabeli, bez żadnego filtrowania */
-router.get('/grupowanie', function(req, res, next) {
+router.get('/gb_miesiace', function(req, res, next) {
   var sql = 'SELECT imie, nazwisko, sum(kwota) as suma, miesiac From faktury group by miesiac';
 
   /* wywołuje dowolne zapytanie sql */
@@ -38,6 +39,20 @@ router.get('/grupowanie', function(req, res, next) {
     // res.json(dane);
   });
 });
+
+
+/* localhost:3000/rachunki/gb_osoby */
+/* do wyświetlenia całej tabeli, bez żadnego filtrowania */
+router.get('/gb_osoby', function(req, res, next) {
+  var sql = 'SELECT imie, nazwisko, sum(kwota) as suma From faktury group by imie';
+
+  /* wywołuje dowolne zapytanie sql */
+  db.query(sql, function(error, dane){  // dane - przechowuje odpowiedź z zapytania do bazy danych
+    res.render('osoby_gb', {title: 'Grupowanie po domownikach', dane: dane});
+    // res.json(dane);
+  });
+});
+
 
 router.get('/send_data', function(req, res, next) {
   res.render('dodaj_rachunek', {title: 'Rachunki'});
@@ -71,7 +86,6 @@ router.post('/dodaj', function(req, res, next) {
 
   });
 });
-
 
 
 module.exports = router;

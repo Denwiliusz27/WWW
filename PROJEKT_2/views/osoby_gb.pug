@@ -17,26 +17,17 @@ block content
     div.main_article
       h2=title
 
-      div#left
-        a(href='http://localhost:3000/rachunki/gb_miesiace') Grupuj po miesiącach
-
-      div#right
-        a(href='http://localhost:3000/rachunki/gb_osoby') Grupuj po domownikach
-
       table.rachunki
         tr
-          th.opis Opis
-          th Kwota (zł)
           th Imie
           th Nazwisko
-          th Miesiąc
+          th Suma (zł)
         each item in dane
           tr
-            td.opis #{item.opis}
-            td.inne #{item.kwota}
             td.torzsamosc #{item.imie}
             td.torzsamosc #{item.nazwisko}
-            td.inne #{item.miesiac}
+            td.inne #{item.suma}
+
 
   footer
     p &copy;2020	Daniel Wielgosz

@@ -105,6 +105,33 @@ body {
   margin: 0 0 0 20.5%;
 }
 
+.main_article div {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #8d0000;
+  border: 2px solid #680000;
+  border-radius: 10px 10px 10px 10px;
+  display: inline-block;
+  width: 25%;
+}
+
+.main_article #left {
+  margin-left: 10%;
+  float: left;
+}
+
+.main_article #right {
+  margin-right: 10%;
+  float: right;
+}
+
+.main_article a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+
 h2 {
   text-align: center;
   border-bottom: 3px solid #000000;
