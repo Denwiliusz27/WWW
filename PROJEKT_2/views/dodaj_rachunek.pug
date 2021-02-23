@@ -17,22 +17,24 @@ block content
     div.main_article
       h2 Dodaj rachunek
 
-      form(action='/rachunki/dodaj', method='POST')
+      a(class='button', href='http://localhost:3000/rachunki/grupowanie') Grupuj op miesiącach
+
+      form(action='/rachunki/dodaj', method='POST', onsubmit="return checkform(this)")
         p.form_option Opis rachunku:
         p
-          input(name= 'opis', value='', type='varchar(300)')
+          input(name= 'opis', value='', type='varchar(300)' required)
         p.form_option Kwota:
         p
-          input(name= 'kwota', value='', type='double')
+          input(name= 'kwota', value='', type='double' required)
         p.form_option Imie:
         p
-          input(name= 'imie', value='', type='text')
+          input(name= 'imie', value='', type='text' required)
         p.form_option Nazwisko:
         p
-          input(name= 'nazwisko', value='', type='text')
+          input(name= 'nazwisko', value='', type='text' required)
         p.form_option Miesiąc:
         p
-          input(name= 'miesiac', value='', type='text')
+          input(name= 'miesiac', value='', type='text' required)
 
         p.submit
           input(value="Dodaj", type='submit')

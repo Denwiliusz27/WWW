@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 21 Lut 2021, 12:13
+-- Czas generowania: 23 Lut 2021, 19:52
 -- Wersja serwera: 10.4.17-MariaDB
 -- Wersja PHP: 8.0.2
 
@@ -37,14 +37,6 @@ CREATE TABLE `faktury` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Zrzut danych tabeli `faktury`
---
-
-INSERT INTO `faktury` (`faktura_id`, `opis`, `kwota`, `imie`, `nazwisko`, `miesiac`) VALUES
-(1, 'Kupno odkurzacza', 300, 'Adam', 'Nowak', 'luty'),
-(2, 'Naprawa telefonu', 150, 'Ela', 'Kowalska', 'styczen');
-
---
 -- Indeksy dla zrzutów tabel
 --
 
@@ -62,7 +54,7 @@ ALTER TABLE `faktury`
 -- AUTO_INCREMENT dla tabeli `faktury`
 --
 ALTER TABLE `faktury`
-  MODIFY `faktura_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `faktura_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

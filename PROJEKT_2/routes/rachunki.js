@@ -27,6 +27,18 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/* localhost:3000/rachunki/grupowanie po miesiacach */
+/* do wyświetlenia całej tabeli, bez żadnego filtrowania */
+router.get('/grupowanie', function(req, res, next) {
+  var sql = 'SELECT imie, nazwisko, sum(kwota) as suma, miesiac From faktury group by miesiac';
+
+  /* wywołuje dowolne zapytanie sql */
+  db.query(sql, function(error, dane){  // dane - przechowuje odpowiedź z zapytania do bazy danych
+    res.render('miesiace_gb', {title: 'Grupowanie po miesiącach', dane: dane});
+    // res.json(dane);
+  });
+});
+
 router.get('/send_data', function(req, res, next) {
   res.render('dodaj_rachunek', {title: 'Rachunki'});
 });
@@ -54,7 +66,7 @@ router.post('/dodaj', function(req, res, next) {
       throw err;
     }
     else {
-      res.render('dodaj_rachunek', { info: 'Dane zostaly poprawnie zapisane'} );
+      res.render('dodaj_rachunek', { info: 'Dane zostały poprawnie zapisane'} );
     }
 
   });

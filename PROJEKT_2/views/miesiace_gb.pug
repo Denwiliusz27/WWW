@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  div.main_part
+    header.header
+      h1 Budżet domowników
+
+    nav.left_bar
+      ul.menu
+        li#main
+          a(href='http://localhost:3000/') Strona główna
+        li#faktury
+          a(href='http://localhost:3000/rachunki') Rachunki
+        li#dodaj_rachunek
+          a(href='http://localhost:3000/rachunki/send_data') Dodaj rachunek
+
+    div.main_article
+      h2 Rachunki
+
+      table.rachunki
+        tr
+          th Imie
+          th Nazwisko
+          th Suma (zł)
+          th Miesiąc
+        each item in dane
+          tr
+            td.torzsamosc #{item.imie}
+            td.torzsamosc #{item.nazwisko}
+            td.inne #{item.suma}
+            td.inne #{item.miesiac}
+
+  footer
+    p &copy;2020	Daniel Wielgosz
