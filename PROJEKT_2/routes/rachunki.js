@@ -31,7 +31,7 @@ router.get('/', function(req, res, next) {
 /* localhost:3000/rachunki/gb_miesiace */
 /* do wyświetlenia całej tabeli, bez żadnego filtrowania */
 router.get('/gb_miesiace', function(req, res, next) {
-  var sql = 'SELECT imie, nazwisko, sum(kwota) as suma, miesiac From faktury group by miesiac';
+  var sql = 'SELECT imie, nazwisko, sum(kwota) as suma, miesiac From faktury group by miesiac, imie order by imie';
 
   /* wywołuje dowolne zapytanie sql */
   db.query(sql, function(error, dane){  // dane - przechowuje odpowiedź z zapytania do bazy danych
