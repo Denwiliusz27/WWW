@@ -36,7 +36,7 @@ body {
   width: 20%;
   height: 100%;
   background-color: #1a4a93;
-  border-right: 7px solid #182f76;
+  border-right: 7px solid #161b91;
   float: left;
   position: absolute;
   top: 127px;
@@ -59,26 +59,11 @@ body {
   align-items: center;
   justify-content: center;
   height: 170px;
-  border: 7px solid #db2915;
+  border: 7px solid #161b91;
   margin: 5% 10px 10px 10px;
   border-radius: 15px 15px 15px 15px;
   background-color: rgba(255,255,255,0.2);
   background-blend-mode: lighten;
-}
-
-.menu #main {
-   background-image: url("https://dyskusja.biz/wp-content/uploads/2016/04/gielda-obrys-czlowieka-monitory-istock-1.jpg");
-   background-size: cover;
-}
-
-.menu #faktury {
-  background-image: url("https://www.polskapraca.info/wp-content/uploads/2020/08/pexels-photo-210607_800x533-800x445.jpeg");
-  background-size: cover;
-}
-
-.menu #dodaj_rachunek {
-  background-image: url("https://ocdn.eu/pulscms-transforms/1/cW-k9kuTURBXy81OWVmNWRlMy02ODJmLTQxMGQtYmRmMy0zOGVjMTE0MjdjYjMuanBlZ5GVAs0BigDDw4GhMAE");
-  background-size: cover;
 }
 
 .menu a {
@@ -95,6 +80,22 @@ body {
   color: #051453;
   letter-spacing: 5px;
   font-size: 43px;
+}
+
+
+.menu #main {
+   background-image: url("https://dyskusja.biz/wp-content/uploads/2016/04/gielda-obrys-czlowieka-monitory-istock-1.jpg");
+   background-size: cover;
+}
+
+.menu #faktury {
+  background-image: url("https://www.polskapraca.info/wp-content/uploads/2020/08/pexels-photo-210607_800x533-800x445.jpeg");
+  background-size: cover;
+}
+
+.menu #dodaj_rachunek {
+  background-image: url("https://ocdn.eu/pulscms-transforms/1/cW-k9kuTURBXy81OWVmNWRlMy02ODJmLTQxMGQtYmRmMy0zOGVjMTE0MjdjYjMuanBlZ5GVAs0BigDDw4GhMAE");
+  background-size: cover;
 }
 
 .main_article {
